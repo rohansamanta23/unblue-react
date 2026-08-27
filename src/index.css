@@ -1,0 +1,85 @@
+:root {
+  --ink: #000000;
+  --navy: #1a0156;
+  --orange: #fe4512;
+  --bg: #f9f5f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+a {
+  color: var(--orange);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
+}
+
+h1,
+h2,
+p,
+ul,
+table {
+  margin: 0;
+}
+
+/* Shared page container used by every section */
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Shared "wagon wheel" bullet, reused across Hero and Snapshot */
+.wheel {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  flex: none;
+  display: inline-block;
+}
+
+/* Shared section eyebrow / label */
+.label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 6px;
+}
+
+.sectionRule {
+  width: 60px;
+  height: 3px;
+  background: var(--navy);
+  margin: 0 0 22px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

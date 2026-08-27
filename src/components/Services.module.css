@@ -1,0 +1,43 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.table td {
+  padding: 14px 0;
+  border-bottom: 1px dotted #a99;
+  vertical-align: top;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.titleCell {
+  width: 230px;
+  font-weight: bold;
+  color: var(--navy);
+}
+
+@media (max-width: 640px) {
+  .titleCell {
+    width: auto;
+    display: block;
+  }
+
+  .table tr {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .table td {
+    display: block;
+    border-bottom: none;
+    padding: 2px 0;
+  }
+
+  .table tr:not(:last-child) {
+    border-bottom: 1px dotted #a99;
+  }
+}

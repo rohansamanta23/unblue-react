@@ -1,0 +1,43 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px;
+}
+
+.grid p {
+  margin: 0 0 16px;
+}
+
+.grid p:last-child {
+  margin-bottom: 0;
+}
+
+.ledger {
+  font-size: 14px;
+}
+
+.ledger div {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0;
+  border-bottom: 1px dotted #a99;
+}
+
+.ledger div:last-child {
+  border-bottom: none;
+}
+
+.ledger span:first-child {
+  color: #555;
+}
+
+.ledger span:last-child {
+  font-weight: bold;
+  color: var(--navy);
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

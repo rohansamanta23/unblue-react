@@ -1,0 +1,71 @@
+.pendingNote {
+  font-size: 13px;
+  color: #777;
+  margin: -10px 0 20px;
+}
+
+.box {
+  border: 1px solid var(--ink);
+  padding: 28px;
+  position: relative;
+}
+
+.quote {
+  font-size: 19px;
+  font-style: italic;
+  margin: 0 0 18px;
+  min-height: 110px;
+}
+
+.who {
+  font-size: 14px;
+  color: var(--navy);
+  font-weight: bold;
+}
+
+.who span {
+  color: #555;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1.5px solid var(--navy);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dotActive {
+  background: var(--navy);
+}
+
+.arrowBtn {
+  background: none;
+  border: 1px solid var(--ink);
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.arrowBtn:hover {
+  background: var(--ink);
+  color: var(--bg);
+}

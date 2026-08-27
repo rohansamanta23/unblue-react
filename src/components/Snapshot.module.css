@@ -1,0 +1,51 @@
+.statsLedger {
+  font-size: 15px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 14px 0;
+  border-bottom: 1px dotted #a99;
+  gap: 16px;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.statLabel {
+  color: #333;
+  max-width: 340px;
+}
+
+.statValue {
+  font-weight: bold;
+  color: var(--orange);
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.sectorTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.sectorTags span {
+  border: 1px solid var(--navy);
+  color: var(--navy);
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  padding: 6px 12px;
+}
+
+@media (max-width: 640px) {
+  .row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}

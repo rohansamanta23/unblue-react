@@ -1,0 +1,94 @@
+.header {
+  padding: 28px 0 18px;
+  border-bottom: 3px solid var(--navy);
+}
+
+.headRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.brandName {
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 25px;
+  color: var(--orange);
+}
+
+.nav {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.nav a {
+  color: var(--ink);
+}
+
+.nav a:hover {
+  color: var(--orange);
+}
+
+.menuButton {
+  display: none;
+  border: 0;
+  background: transparent;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.menuButton span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 4px 0;
+  background: var(--navy);
+}
+
+@media (max-width: 700px) {
+  .header {
+    padding: 18px 0 14px;
+  }
+
+  .headRow {
+    position: relative;
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 12px;
+  }
+
+  .navOpen {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 12px 0;
+    border-top: 1px solid color-mix(in srgb, var(--navy) 20%, transparent);
+  }
+}

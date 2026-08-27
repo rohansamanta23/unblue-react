@@ -1,0 +1,14 @@
+.section {
+  padding: 46px 0;
+  border-bottom: 1px solid #ccc4bd;
+}
+
+.section.noBorder {
+  border-bottom: none;
+}
+
+.heading {
+  font-size: 24px;
+  color: var(--navy);
+  margin: 0 0 6px;
+}

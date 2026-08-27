@@ -1,0 +1,64 @@
+.hero {
+  padding: 60px 0 50px;
+  border-bottom: 1px solid var(--ink);
+}
+
+.eyebrow {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 14px;
+}
+
+.heading {
+  font-size: 44px;
+  line-height: 1.15;
+  margin: 0 0 20px;
+  color: var(--navy);
+}
+
+.heading em {
+  font-style: normal;
+  color: var(--orange);
+}
+
+.subtext {
+  font-size: 18px;
+  max-width: 520px;
+  margin: 0 0 26px;
+}
+
+.ctaBtn {
+  display: inline-block;
+  border: 2px solid var(--ink);
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: var(--ink);
+}
+
+.ctaBtn:hover {
+  background: var(--ink);
+  color: var(--bg);
+  text-decoration: none;
+}
+
+.cartRule {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 34px;
+}
+
+.bar {
+  flex: 1;
+  height: 3px;
+  background: var(--navy);
+}
+
+@media (max-width: 640px) {
+  .heading {
+    font-size: 32px;
+  }
+}
