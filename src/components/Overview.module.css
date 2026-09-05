@@ -1,7 +1,8 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 34px;
+  gap: 20px;
+  text-align:justify
 }
 
 .grid p {
@@ -19,7 +20,7 @@
 .ledger div {
   display: flex;
   justify-content: space-between;
-  padding: 7px 0;
+  padding: 10px 0;
   border-bottom: 1px dotted #a99;
 }
 

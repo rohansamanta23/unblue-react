@@ -1,6 +1,7 @@
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Snapshot from './components/Snapshot'
+import FoundingFocus from './components/Foundingfocus'
 import Overview from './components/Overview'
 import Services from './components/Services'
 import WhyUs from './components/WhyUs'
@@ -14,6 +15,7 @@ export default function App() {
       <Header />
       <Hero />
       <Snapshot />
+      <FoundingFocus />
       <Overview />
       <Services />
       <WhyUs />

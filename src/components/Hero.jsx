@@ -4,16 +4,14 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className="wrap">
-        <div className={styles.eyebrow}>Pitch Decks · LinkedIn Growth · Fundraising</div>
+        <div className={styles.eyebrow}>Deeptech · LinkedIn · Fundraising</div>
 
         <h1 className={styles.heading}>
-          A boutique consultancy for <em>early-stage</em> founders.
+          A boutique consulting firm for <em>DeepTech</em> founders.
         </h1>
 
         <p className={styles.subtext}>
-          Unblue helps founders become investor-ready — through fundraising
-          advisory, pitch deck development, and founder positioning on
-          LinkedIn.
+          Unblue provides fundraising consulting to DeepTech founders and LinkedIn management to founders, professionals, and companies. We help you raise capital, build your network, and grow your business.
         </p>
 
         <a className={styles.ctaBtn} href="#contact">

@@ -1,5 +1,5 @@
 .header {
-  padding: 28px 0 18px;
+  padding: 5px 0 5px;
   border-bottom: 3px solid var(--navy);
 }
 
@@ -18,7 +18,7 @@
 }
 
 .logo {
-  height: 40px;
+  height: 60px;
   width: auto;
   display: block;
 }

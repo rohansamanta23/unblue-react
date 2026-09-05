@@ -1,24 +1,31 @@
-import { useState } from 'react'
-import Section from './Section'
-import { testimonials } from '../data/content'
-import styles from './Testimonials.module.css'
+import { useEffect, useState } from "react";
+import Section from "./Section";
+import { testimonials } from "../data/content";
+import styles from "./Testimonials.module.css";
 
 export default function Testimonials() {
-  const [current, setCurrent] = useState(0)
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setCurrent((i) => (i + 1) % testimonials.length);
+    }, 5000);
+
+    return () => window.clearInterval(timer);
+  }, []);
 
   const goPrev = () =>
-    setCurrent((i) => (i - 1 + testimonials.length) % testimonials.length)
+    setCurrent((i) => (i - 1 + testimonials.length) % testimonials.length);
 
-  const goNext = () =>
-    setCurrent((i) => (i + 1) % testimonials.length)
+  const goNext = () => setCurrent((i) => (i + 1) % testimonials.length);
 
-  const active = testimonials[current]
+  const active = testimonials[current];
 
   return (
-    <Section id="testimonials" label="Testimonials" title="What founders say">
+    <Section id='testimonials' label='Testimonials' title='What founders say'>
       <p className={styles.pendingNote}>
-        Placeholder quotes below — send over the feedback document and
-        these will be swapped for real ones.
+        Placeholder quotes below — send over the feedback document and these
+        will be swapped for real ones.
       </p>
 
       <div className={styles.box}>
@@ -34,7 +41,7 @@ export default function Testimonials() {
           <button
             className={styles.arrowBtn}
             onClick={goPrev}
-            aria-label="Previous testimonial"
+            aria-label='Previous testimonial'
           >
             ‹
           </button>
@@ -43,7 +50,7 @@ export default function Testimonials() {
             {testimonials.map((t, i) => (
               <button
                 key={t.name + i}
-                className={`${styles.dot} ${i === current ? styles.dotActive : ''}`}
+                className={`${styles.dot} ${i === current ? styles.dotActive : ""}`}
                 onClick={() => setCurrent(i)}
                 aria-label={`Go to testimonial ${i + 1}`}
               />
@@ -53,12 +60,12 @@ export default function Testimonials() {
           <button
             className={styles.arrowBtn}
             onClick={goNext}
-            aria-label="Next testimonial"
+            aria-label='Next testimonial'
           >
             ›
           </button>
         </div>
       </div>
     </Section>
-  )
+  );
 }
